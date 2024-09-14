@@ -17,13 +17,11 @@ import Explore from "./components/Layout/Explore";
 import Around from "./components/Layout/Around";
 import Footer from "./components/Layout/Footer";
 import CopyRight from "./components/Layout/CopyRight";
-import Manuber from "./components/Layout/Manuber";
 
 const App = () => {
   return (
     <div>
       <Header />
-      {/* <Manuber /> */}
       <DownManuber />
       <Trusted />
       <Banner />
