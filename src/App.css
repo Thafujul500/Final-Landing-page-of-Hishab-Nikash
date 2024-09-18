@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* drop down section image animation */
 .custom_img {
   width: 200px;
   height: 200px;
@@ -16,24 +17,37 @@
 
 @keyframes up-down {
   0% {
-    margin-top: 10px;
+    transform: translateY(10px);
   }
   50% {
-    margin-top: 20px;
+    transform: translateY(20px);
   }
   100% {
-    margin-top: 10px;
+    transform: translateY(10px);
   }
 }
 
+/* main */
 .custom_position {
-  /* position: relative;
-  top: -150px; */
   background-color: white;
   height: 300px;
   margin-top: -150px;
   margin-bottom: 150px;
 }
+
+@media only screen and (max-width: 600px) {
+  .custom_position {
+    background-color: white;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 1000px;
+  }
+}
+/* main */
+
+/* chat for up to 600 px start */
+
+/* chat for up to 600 px  end*/
 
 @media only screen and (max-width: 600px) {
   .custom_position {
@@ -57,13 +71,13 @@
 
 @keyframes smallCard {
   0% {
-    margin-top: 10px;
+    transform: translateY(10px);
   }
   50% {
-    margin-top: 20px;
+    transform: translateY(20px);
   }
   100% {
-    margin-top: 10px;
+    transform: translateY(10px);
   }
 }
 
@@ -71,4 +85,60 @@
   margin: 150px 0;
   text-align: center;
   font-size: 20px;
+}
+
+/* card design */
+/* Logo component card design */
+.custom-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  background-color: #e9ecef;
+}
+
+/* Pricing component card design */
+.cards {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cards:hover {
+  transform: scale(1.05);
+  background-color: #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cards {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-const PricingLast = () => {
+const PricingList = () => {
   return (
     <div className="container pb-5">
       <div className="row">
@@ -39,4 +39,4 @@ const PricingLast = () => {
   );
 };
 
-export default PricingLast;
+export default PricingList;
