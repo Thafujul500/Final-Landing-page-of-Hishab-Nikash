@@ -1,5 +1,5 @@
 import React from "react";
-import All from "./components/All";
+import All from "./components/all/All";
 
 const App = () => {
   return (

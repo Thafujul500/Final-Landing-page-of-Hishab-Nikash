@@ -1,8 +1,8 @@
 import React from "react";
 
-const Inventory = () => {
+const Store = () => {
   return (
-    <div className="bg-danger p-3 p-md-5">
+    <div style={{ backgroundColor: "#E02A65" }} className="p-3 p-md-5">
       <div className="container text-center text-md-start p-3 p-md-5">
         <h6 className="mt-4 mt-md-5 text-warning fw-bold">
           WITH YOU EVERYWHERE
@@ -35,4 +35,4 @@ const Inventory = () => {
   );
 };
 
-export default Inventory;
+export default Store;

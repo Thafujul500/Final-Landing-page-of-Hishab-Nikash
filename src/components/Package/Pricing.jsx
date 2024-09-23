@@ -1,10 +1,15 @@
 import React from "react";
 
-const Pricing = () => {
+const Package = () => {
   return (
     <div className="bg-body-tertiary">
       <div className="container p-3">
-        <h6 className="mt-5 text-danger text-center fw-bold">GET STARTED</h6>
+        <h6
+          style={{ color: "#E02A65" }}
+          className="mt-5 text-center text-md-start text-lg-start fw-bold"
+        >
+          GET STARTED
+        </h6>
 
         <div className="d-flex justify-content-between align-items-center flex-column flex-sm-row">
           <h1 className="text-black fw-bold text-center text-sm-start">
@@ -12,8 +17,9 @@ const Pricing = () => {
           </h1>
           <div className="form-check form-switch d-flex justify-content-center align-items-center mt-3 mt-sm-0">
             <label
-              className="form-check-label text-danger fs-5 fw-bold"
+              className="form-check-label fs-5 fw-bold"
               for="flexSwitchCheckChecked"
+              style={{ color: "#E02A65" }}
             >
               Monthly
             </label>
@@ -112,4 +118,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Package;

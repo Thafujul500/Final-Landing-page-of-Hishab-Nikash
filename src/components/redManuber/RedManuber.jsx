@@ -1,8 +1,7 @@
 import React from "react";
-
 const RedManuber = () => {
   return (
-    <div className="bg-danger parent pt-5 pb-5 ">
+    <div style={{ backgroundColor: "#E02A65" }} className="parent pt-5 pb-5 ">
       <div>
         <div className="row container m-auto w-75  pb-5">
           <div className="col-lg-6 mb-5  pb-5">
@@ -16,7 +15,7 @@ const RedManuber = () => {
             <div className="d-md-flex flex-md-row flex-sm-column">
               <button
                 type="button"
-                className="btn btn-light bg-dark text-white p-3 border-0 mt-3 w-100 fw-bolder me-md-2 "
+                className="btn  btn-light bg-dark text-white p-3 border-0 mt-3 w-100 fw-bolder me-md-2 "
                 style={{ fontSize: "16px" }}
               >
                 SIGN UP FOR FREE
@@ -32,8 +31,6 @@ const RedManuber = () => {
           </div>
         </div>
       </div>
-
-      {/* clild */}
     </div>
   );
 };

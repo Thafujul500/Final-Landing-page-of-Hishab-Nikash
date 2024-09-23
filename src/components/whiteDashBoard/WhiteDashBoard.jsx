@@ -1,4 +1,7 @@
 import React from "react";
+import company from "../../assets/images/Business growth-rafiki.svg";
+import sortware from "../../assets/images/Software code testing-amico.svg";
+import customer from "../../assets/images/Customer feedback-amico.svg";
 
 const WhiteDashBoard = () => {
   return (
@@ -7,8 +10,8 @@ const WhiteDashBoard = () => {
         <div className="col-lg-4 col-sm-12">
           <div className="text-center">
             <img
-              className="text-center img-fluid"
-              src="public\IMG\logo_1.png"
+              className="text-center w-50 img-fluid"
+              src={company}
               alt="sorry"
             />
           </div>
@@ -25,8 +28,8 @@ const WhiteDashBoard = () => {
         <div className="col-lg-4 col-sm-12">
           <div className="text-center">
             <img
-              className="text-center img-fluid"
-              src="public\IMG\logo_2.png"
+              className="text-center w-50 img-fluid"
+              src={sortware}
               alt="sorry"
             />
           </div>
@@ -43,8 +46,8 @@ const WhiteDashBoard = () => {
         <div className="col-lg-4">
           <div className="text-center">
             <img
-              className="text-center img-fluid"
-              src="public\IMG\logo_3.png"
+              className="text-center w-50 img-fluid"
+              src={customer}
               alt="sorry"
             />
           </div>

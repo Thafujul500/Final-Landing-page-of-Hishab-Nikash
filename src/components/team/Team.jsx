@@ -1,9 +1,9 @@
 import React from "react";
 
-const Card = () => {
+const Team = () => {
   return (
     <div className="bg-body-secondary pb-5 pt-5">
-      <p className="text-center mt-5 fw-bold text-danger">
+      <p style={{ color: "#E02A65" }} className="text-center mt-5 fw-bold">
         IT'S TIME TO START RIGHT
       </p>
       <h1 className="text-center text-black mb-5">
@@ -62,4 +62,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Team;

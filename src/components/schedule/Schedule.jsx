@@ -1,10 +1,10 @@
 import React from "react";
 
-const Around = () => {
+const Schedule = () => {
   return (
     <div className="container text-center pb-5 pt-5 mb-5">
       <div className="mb-5">
-        <h6 className="text-warning fw-bold text-danger">
+        <h6 style={{ color: "#E02A65" }} className="fw-bold">
           FOR A FULFILLING EXPERIENCE
         </h6>
         <h1 className="text-black fs-4 fs-md-5">
@@ -16,7 +16,10 @@ const Around = () => {
         <h1 className="text-black fs-3 fs-md-1 mt-3 mt-md-5">
           Start growing with <br /> Zoho Inventory today
         </h1>
-        <button className="btn btn-danger mt-4 mt-md-5 fs-6 text-uppercase fw-bold">
+        <button
+          style={{ backgroundColor: "#E02A65" }}
+          className="btn btn-danger mt-4 mt-md-5 fs-6 text-uppercase fw-bold"
+        >
           Schedule a Demo
         </button>
         <div className="row d-flex flex-column flex-md-row justify-content-center mt-4 mt-md-5">
@@ -35,4 +38,4 @@ const Around = () => {
   );
 };
 
-export default Around;
+export default Schedule;

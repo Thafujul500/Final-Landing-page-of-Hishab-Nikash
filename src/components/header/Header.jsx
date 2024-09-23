@@ -1,17 +1,20 @@
 import React from "react";
+import headerMainLogo from "../../assets/images/main_logo.png";
 
 const Header = () => {
   return (
-    <div className="ms-md-5">
+    <div className="sticky-top">
       <nav className="navbar navbar-expand-lg bg-white d-flex justify-content-between">
-        <div className="container-fluid">
-          <div>
+        <div className="container ps-2 pe-2">
+          <div className="">
             <img
-              className="img-fluid ms-3"
-              src="public/IMG/logo-white.png"
+              src={headerMainLogo}
               alt="sorry"
+              width={"100px"}
+              className="img-fluid "
             />
           </div>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -67,63 +70,42 @@ const Header = () => {
                   Contact
                 </a>
               </li>
-
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link fw-bold ms-3 me-3 active dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Training
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li>
             </ul>
 
-            {/* Add buttons inside the navbar for mobile view */}
             <div className="d-lg-none d-flex flex-row align-items-center mt-2 justify-content-center">
               <button
                 type="button"
-                className="btn btn-light text-danger fw-bolder me-2 mb-2"
+                style={{ color: "#5698D1" }}
+                className="btn btn-white  fw-bold me-2 mb-2"
               >
                 LogIn
               </button>
-              <button type="button" className="btn btn-danger fw-bolder">
+              <button
+                style={{ backgroundColor: "#5698D1" }}
+                type="button"
+                className="btn btn-primary fw-bold"
+              >
+                SignUp
+              </button>
+            </div>
+            {/* Large screens (including tablets): Buttons outside the collapsible navbar */}
+            <div className="d-none d-lg-flex me-3">
+              <button
+                type="button"
+                style={{ color: "#5698D1" }}
+                className="btn btn-white  fw-bold me-2"
+              >
+                LogIn
+              </button>
+              <button
+                type="button"
+                style={{ backgroundColor: "#5698D1" }}
+                className="btn btn-primary fw-bold me-1"
+              >
                 SignUp
               </button>
             </div>
           </div>
-        </div>
-
-        {/* Keep buttons visible for large screens */}
-        <div className="d-none d-lg-flex me-3">
-          <button
-            type="button"
-            className="btn btn-light text-danger fw-bolder me-2"
-          >
-            LogIn
-          </button>
-          <button type="button" className="btn btn-danger fw-bolder me-1">
-            SignUp
-          </button>
         </div>
       </nav>
     </div>

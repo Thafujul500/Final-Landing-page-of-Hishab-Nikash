@@ -2,12 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-primary-subtle pt-md-5">
+    <div className="pt-md-5" style={{ backgroundColor: "#F9BFD0" }}>
       <div className="container">
         <div className="row pt-5 pb-5 justify-content-center">
           <div className="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center text-sm-start">
             <h1 className="fs-5 mb-4 fw-bold text-uppercase">About</h1>
-
             <p>About</p>
             <p>Features</p>
             <p>Package</p>
@@ -16,7 +15,7 @@ const Footer = () => {
 
           <div className="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 text-center text-sm-start">
             <h1 className="fs-5 mb-4 fw-bold text-uppercase">
-              More <span className="text-primary">information</span>
+              More <span style={{ color: "#E02A65" }}>information</span>
             </h1>
             <p>About</p>
             <p>Privacy Policy</p>
@@ -41,15 +40,20 @@ const Footer = () => {
 
           <div className="col-12 col-sm-6 col-md-3 text-center text-sm-start">
             <h1 className="fs-5 fw-bold mb-4 text-uppercase">
-              silicon <span className="text-primary">isp</span>
+              silicon <span style={{ color: "#E02A65" }}>isp</span>
             </h1>
             <p>
               Your Complete ISP Billing and <br /> Management Software
             </p>
+
             <div className="d-flex justify-content-center">
-              <div className="input-group mb-3">
+              <div className="input-group mb-3 mx-3 mx-sm-0">
+                {" "}
                 <span className="input-group-text" id="basic-addon1">
-                  <i className="bi bi-envelope"></i>
+                  <i
+                    style={{ color: "#E02A65" }}
+                    className="fa-solid fa-envelope "
+                  ></i>
                 </span>
                 <input
                   type="text"

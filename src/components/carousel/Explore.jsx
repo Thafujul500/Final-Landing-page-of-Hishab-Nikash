@@ -1,6 +1,6 @@
 import React from "react";
 
-const Explore = () => {
+const Carousel = () => {
   return (
     <div className="bg-dark pb-5">
       <div className="container pt-5 m-auto">
@@ -13,7 +13,10 @@ const Explore = () => {
             Thousands of customers <br className="d-none d-lg-block" /> prefer
             Zoho Inventory
           </h1>
-          <button className="btn btn-danger text-uppercase">
+          <button
+            style={{ backgroundColor: "#E02A65" }}
+            className="btn btn-danger text-uppercase"
+          >
             Explore case studies
           </button>
         </div>
@@ -104,4 +107,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default Carousel;

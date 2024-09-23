@@ -3,38 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* drop down section image animation */
-.custom_img {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  animation-duration: 2s;
-  animation-name: up-down;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
-
-/* main */
+/* chat for up to 600 px start */
 .custom_position {
   background-color: white;
   height: 300px;
   margin-top: -150px;
   margin-bottom: 150px;
 }
-
+/* Mobile View (max-width: 600px) */
 @media only screen and (max-width: 600px) {
   .custom_position {
     background-color: white;
@@ -43,12 +19,16 @@
     margin-bottom: 1000px;
   }
 }
-/* main */
-
-/* chat for up to 600 px start */
-
+/* Tablet View (min-width: 601px and max-width: 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .custom_position {
+    background-color: white;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 1000px;
+  }
+}
 /* chat for up to 600 px  end*/
-
 @media only screen and (max-width: 600px) {
   .custom_position {
     background-color: white;
@@ -57,36 +37,6 @@
     margin-bottom: 1000px;
   }
 }
-
-.smallCard {
-  height: 50px;
-  width: 150px;
-  border-radius: 10px;
-  position: relative;
-  animation-name: smallCard;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes smallCard {
-  0% {
-    transform: translateY(10px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
-
-.trusted {
-  margin: 150px 0;
-  text-align: center;
-  font-size: 20px;
-}
-
 /* card design */
 /* Logo component card design */
 .custom-card {
@@ -97,12 +47,10 @@
   transition: transform 0.3s ease-in-out;
   margin: 10px;
 }
-
 .custom-card:hover {
   transform: scale(1.05);
   background-color: #e9ecef;
 }
-
 /* Pricing component card design */
 .cards {
   width: 100%;
@@ -123,17 +71,14 @@
     padding-left: 0;
     padding-right: 0;
   }
-
   .row {
     margin-left: 0;
     margin-right: 0;
   }
-
   .col-12 {
     padding-left: 0;
     padding-right: 0;
   }
-
   .cards {
     width: 100%;
     box-sizing: border-box;

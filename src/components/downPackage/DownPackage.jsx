@@ -1,6 +1,6 @@
 import React from "react";
 
-const PricingList = () => {
+const DownPackage = () => {
   return (
     <div className="container pb-5">
       <div className="row">
@@ -39,4 +39,4 @@ const PricingList = () => {
   );
 };
 
-export default PricingList;
+export default DownPackage;
